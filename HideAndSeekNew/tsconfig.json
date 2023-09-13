@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "outFile": "./bin/game.js",
+    "allowJs": true,
+    "paths": {
+      "@dcl/ui-scene-utils": [
+        "node_modules\\@dcl\\ui-scene-utils\\dist\\index.d.ts"
+      ],
+      "@dcl/ecs-scene-utils": [
+        "node_modules\\@dcl\\ecs-scene-utils\\dist\\index.d.ts"
+      ],
+      "@dcl/l2-scene-utils": [
+        "node_modules\\@dcl\\l2-scene-utils\\dist\\index.d.ts"
+      ],
+      "colyseus.js": [
+        "node_modules\\colyseus.js\\dist\\colyseus.d.ts"
+      ],
+      "decentraland-transactions": [
+        "node_modules\\decentraland-transactions\\decentraland-transactions.d.ts"
+      ],
+      "eth-connect": [
+        "node_modules\\eth-connect\\eth-connect.d.ts"
+      ],
+      "dcldash": [
+        "node_modules\\dcldash\\dist\\index.d.ts"
+      ]
+    },
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*.ts",
+    "./node_modules/decentraland-builder-scripts/types.d.ts"
+  ],
+  "extends": "./node_modules/decentraland-ecs/types/tsconfig.json",
+  "compileOnSave": false
+}
