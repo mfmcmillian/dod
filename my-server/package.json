@@ -11,7 +11,6 @@
     "start": "tsx watch src/index.ts",
     "loadtest": "tsx loadtest/example.ts --room my_room --numClients 2",
     "build": "npm run clean && tsc",
-    "clean": "rimraf /var/www/colyseus-cloud/deploy-cache-production/146-multiplayer/git/my-server/build",
     "test": "mocha -r tsx test/**_test.ts --exit --timeout 15000"
   },
   "author": "",
